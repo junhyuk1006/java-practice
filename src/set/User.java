@@ -1,3 +1,5 @@
+package set;
+
 public class User {
     private int power;
     private int money;
@@ -26,7 +28,7 @@ public class User {
     }
 
     public void setMoney(int money) {
-        this.money += money;
+        this.money = money;
     }
 
     public void setItem(Item item) {

@@ -1,3 +1,5 @@
+package set;
+
 public class Item {
     private String name;
     private int price;
@@ -9,5 +11,15 @@ public class Item {
         this.power = power;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public int getPower() {
+        return power;
+    }
 }

@@ -1,3 +1,5 @@
+package set;
+
 public class Boss {
     private int power;
     private int money;

@@ -1,3 +1,5 @@
+package menu;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -5,7 +7,7 @@ public class Member {
 
     HashMap<String,String> repository = new HashMap<>();
     Scanner sc=new Scanner(System.in);
-    boolean flag = false;
+    public boolean flag = false;
 
     public void join(){
         System.out.println("사용하실 아이디를 입력해주세요.");
