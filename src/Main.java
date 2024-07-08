@@ -1,3 +1,4 @@
+import menu.Batting;
 import menu.Battle;
 import menu.Member;
 import menu.Shop;
@@ -110,6 +111,8 @@ public class Main {
                     break;
 
                 case 4:
+                    Batting batting = new Batting();
+                    batting.play(user);
                     break;
 
                 default:
