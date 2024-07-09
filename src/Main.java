@@ -48,8 +48,9 @@ public class Main {
         // 생성자
         Battle battle = new Battle();
         Shop shop = new Shop();
+        Boss boss = new Boss();
         // 보스 세팅
-        Boss[] boss = battle.bossSetting();
+        Boss[] bosses = boss.bossSetting();
         // 아이템 세팅
         Item[] items = shop.itemSetting();
         while(true) {
@@ -69,7 +70,7 @@ public class Main {
                             System.out.println("잘못입력하셨습니다.");
                         }
                     }
-                    battle.action(user,boss[stage-1]); // 보스생성,선택
+                    battle.action(user,bosses[stage-1]); // 보스생성,선택
                     break;
 
                 case 2:
