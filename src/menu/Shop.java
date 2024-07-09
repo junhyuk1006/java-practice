@@ -11,8 +11,7 @@ public class Shop {
         Item item3 = new Item("sword",120000,200000);
         Item item4 = new Item("gun",150000,250000);
 
-        Item[] items = {item1,item2,item3,item4};
-        return items;
+        return new Item[]{item1,item2,item3,item4};
     }
 
     public void itemShow(Item[] items){

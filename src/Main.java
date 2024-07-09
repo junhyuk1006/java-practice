@@ -47,6 +47,11 @@ public class Main {
 
         // 생성자
         Battle battle = new Battle();
+        Shop shop = new Shop();
+        // 보스 세팅
+        Boss[] boss = battle.bossSetting();
+        // 아이템 세팅
+        Item[] items = shop.itemSetting();
         while(true) {
             System.out.println("행동을 선택하세요");
             System.out.println("1.전투 2 .내 정보 확인 3.무기 상점 4.도박 5.로그아웃");
@@ -64,8 +69,7 @@ public class Main {
                             System.out.println("잘못입력하셨습니다.");
                         }
                     }
-                    Boss sBoss = battle.bossSelect(stage);// 보스생성,선택
-                    battle.action(user,sBoss);
+                    battle.action(user,boss[stage-1]); // 보스생성,선택
                     break;
 
                 case 2:
@@ -79,8 +83,7 @@ public class Main {
                     break;
 
                 case 3:
-                    Shop shop = new Shop();
-                    Item[] items = shop.itemSetting();
+
                     while(true){
                         System.out.println("무기 정보를 확인하려면 1번, 구매를 원하시면 2번을 눌러주세요");
                         int num = sc.nextInt();
